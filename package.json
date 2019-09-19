@@ -1,17 +1,17 @@
 {
   "name": "sn-auth-web",
-  "version": "1.0.0",
-  "description": "super engine auth for web",
+  "version": "0.0.1",
+  "description": "super engine file system",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sorrymeika/sn-auth-web.git"
+    "url": "git+https://github.com/sorrymeika/sn-file-web.git"
   },
   "author": "sunlu",
   "bugs": {
-    "url": "https://github.com/sorrymeika/sn-auth-web/issues"
+    "url": "https://github.com/sorrymeika/sn-file-web/issues"
   },
-  "homepage": "https://github.com/sorrymeika/sn-auth-web#readme",
+  "homepage": "https://github.com/sorrymeika/sn-file-web#readme",
   "devDependencies": {
     "egg-bin": "^4.13.1"
   },
@@ -20,13 +20,13 @@
     "egg-cors": "^2.2.0",
     "egg-logger": "^2.4.1",
     "egg-logrotator": "^3.1.0",
-    "egg-mysql": "^3.0.0",
     "egg-validate": "^2.0.2",
     "eslint": "^6.1.0",
-    "koa-compress": "^3.0.0"
+    "koa-compress": "^3.0.0",
+    "sharp": "^0.23.0"
   },
   "scripts": {
-    "dev": "node scripts/dev.js && egg-bin dev --port 7001",
+    "dev": "node scripts/dev.js && egg-bin dev --port 7004",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

@@ -1,14 +1,14 @@
-const { registerConsumer } = require('sonorpc');
+const { createClient } = require('sonofs');
 
-const rpcConsumer = registerConsumer({
-    // 服务提供者名称
-    providerName: 'auth',
-    port: 3006
+const sfsClient = createClient({
+    tmpDir: '/Users/sunlu/Desktop/workspace/nodejs/data/tmp',
+    registry: {
+        port: 8123
+    }
 });
 
 module.exports = {
-    get rpc() {
-        // this 就是 ctx 对象，在其中可以调用 ctx 上的其他方法，或访问属性
-        return rpcConsumer;
+    get sonofs() {
+        return sfsClient;
     },
 };
