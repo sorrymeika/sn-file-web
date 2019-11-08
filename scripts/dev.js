@@ -8,4 +8,4 @@ const ln = (moduleName) => {
 
 ln('sonorpc');
 ln('sonofs');
-ln('egg-snauth');
+ln('egg-sn-auth');

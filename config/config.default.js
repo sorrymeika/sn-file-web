@@ -37,18 +37,14 @@ exports.cors = {
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
 };
 
-exports.middleware = ['gzip'];
+// exports.middleware = ['gzip'];
+// exports.gzip = {
+//     threshold: 2048,
+// };
 
-exports.snauth = {
+exports.auth = {
     registry: {
         port: 3006
-    },
-    excludes: [
-        '/file/upload',
-        '/file'
-    ]
+    }
 };
 
-exports.gzip = {
-    threshold: 2048,
-};

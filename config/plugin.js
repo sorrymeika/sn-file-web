@@ -8,7 +8,7 @@ exports.validate = {
     package: 'egg-validate',
 };
 
-// exports.snauth = {
+// exports.auth = {
 //     enable: true,
-//     package: 'egg-snauth',
+//     package: 'egg-sn-auth',
 // };
