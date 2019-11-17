@@ -1,0 +1,21 @@
+{
+    "buildCommands": [
+        "rm -rf ./node_modules/sonorpc",
+        "rm -rf ./node_modules/sonofs",
+        "rm -rf ./node_modules/egg-sn-auth",
+        "rm -rf ./node_modules/egg-sn-gateway",
+        "npm install",
+        "ln -s /data/common/sonorpc ./node_modules/sonorpc",
+        "ln -s /data/common/sonofs ./node_modules/sonofs",
+        "ln -s /data/common/egg-sn-auth ./node_modules/egg-sn-auth",
+        "ln -s /data/common/egg-sn-gateway ./node_modules/egg-sn-gateway",
+        "npm stop",
+        "npm start"
+    ],
+    "autoConfig": [
+        {
+            "template": "config.js",
+            "destFile": "config/config.default.js"
+        }
+    ]
+}
