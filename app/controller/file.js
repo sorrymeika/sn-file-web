@@ -5,7 +5,7 @@ class FileController extends Controller {
     async upload() {
         const { ctx } = this;
         const stream = await ctx.getFileStream();
-        const result = await ctx.sonofs.upload(stream.mime, stream);
+        const result = await this.app.sonofs.upload(stream.mime, stream);
 
         console.log(result);
 
@@ -18,7 +18,7 @@ class FileController extends Controller {
     async file() {
         const { ctx } = this;
         try {
-            const result = await ctx.sonofs.getFile(ctx.query.name);
+            const result = await this.app.sonofs.getFile(ctx.query.name);
             ctx.type = result.mime;
 
             let buffer = result.buffer;

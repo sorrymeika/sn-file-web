@@ -7,6 +7,7 @@ exports.logger = {
 
 exports.security = {
     domainWhiteList: [
+        'http://localhost:3000',
         'http://localhost:10020',
         'http://localhost:10021',
         'http://localhost:10022',

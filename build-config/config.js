@@ -6,7 +6,7 @@ exports.logger = {
 };
 
 exports.security = {
-    domainWhiteList: ['http://www.big1024.com', 'http://admin.big1024.com'],
+    domainWhiteList: ['http://www.big1024.com', 'http://admin.big1024.com', 'http://newyear.big1024.com'],
     csrf: {
         enable: false
     }
