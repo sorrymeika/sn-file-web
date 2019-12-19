@@ -1,6 +1,6 @@
-const { createClient } = require('sonofs');
+const sonofs = require('sonofs');
 
-const sfsClient = createClient({
+const sfsClient = sonofs.createFileClient({
     tmpDir: '/Users/sunlu/Desktop/workspace/nodejs/data/tmp',
     registry: {
         port: 8123
